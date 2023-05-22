@@ -1,0 +1,35 @@
+/* Common styles */
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .countdown {
+    font-size: 24px;
+  }
+}
+
+/* Animation styles */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.countdown {
+  background-image: linear-gradient(to right, #FF9933, #FFFFFF, #138808, #FFFFFF, #2554C7, #FF9933);
+  background-size: 600% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 10s linear infinite;
+}
